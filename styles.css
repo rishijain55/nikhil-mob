@@ -1,3 +1,25 @@
+/* onloading page */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+#onloadingPage {
+  height: 100vh;
+  background-color: #0b0c10;
+  color: #c5c6c7;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+}
+.onloadingHeader {
+  font-size: 5rem;
+}
+/* . */
 .row {
   margin: 0;
 }

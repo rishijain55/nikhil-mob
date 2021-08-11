@@ -1,3 +1,31 @@
+// loading page
+$(window).on("load", function () {
+  $("#onloadingPage").hide();
+});
+var loop = true;
+var onload = function () {
+  if (loop == true) {
+    $(".onloadingHeader").animate({ fontSize: "6rem" }, 500);
+    loop = false;
+  } else {
+    $(".onloadingHeader").animate({ fontSize: "5rem" }, 500);
+    loop = true;
+  }
+};
+setInterval(function () {
+  if (loop == true) {
+    $(".onloadingHeader").animate({ fontSize: "6rem" }, 500);
+    loop = false;
+  } else {
+    $(".onloadingHeader").animate({ fontSize: "5rem" }, 500);
+    loop = true;
+  }
+}, 500);
+$(window).on("load", function () {
+  $("body").removeClass("stop-scrolling");
+});
+
+//navigation bar
 const sections = document.querySelectorAll(".test");
 const navLi = document.querySelectorAll(".menu li");
 window.addEventListener("scroll", function () {
