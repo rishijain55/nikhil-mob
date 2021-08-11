@@ -1,4 +1,9 @@
 /* onloading page */
+@media (max-width: 560px) {
+  .onloadingHeader {
+    font-size: 3rem !important;
+  }
+}
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
@@ -28,7 +33,7 @@
   margin: 0 20px;
   font-size: 1.25rem;
   color: #f8f8f8 !important;
-  font-family: Ubuntu, sans-serif;
+  font-family: Century Gothic, monospace;
   font-weight: 500;
 }
 .navbar-brand {
@@ -45,7 +50,7 @@
   padding-bottom: 0;
   position: absolute;
   width: 100%;
-  background: rgba(0, 0, 0, 0.9) !important;
+  background-color: #0b0c10;
   z-index: 2;
   opacity: 0;
 }
@@ -57,13 +62,18 @@ li.current {
 }
 @media (max-width: 560px) {
   .navbar-brand {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 0;
     letter-spacing: 0px;
   }
   .navbar {
     padding-left: 10px;
     padding-right: 0px;
+  }
+  .section-link {
+    font-size: 1rem !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
   }
 }
 /* photo quote */
@@ -76,7 +86,7 @@ li.current {
   background-attachment: fixed;
 
   /* Full height */
-  height: 100%;
+  height: 100vh;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -139,8 +149,79 @@ li.current {
   cursor: pointer;
   opacity: 0;
 }
+@media (max-width: 560px) {
+  .heading {
+    font-size: 2rem !important;
+    margin: 10% auto !important;
+  }
+  #intro {
+    text-align: center !important;
+  }
+  .fab1 {
+    font-size: 1.2rem !important;
+    padding-right: 1% !important;
+  }
+  .header-links-cont {
+    text-align: center !important;
+  }
+  .header-links {
+    padding-right: 0 !important;
+  }
+  .line {
+    margin: auto auto !important;
+  }
+  .titlecontent {
+    margin: 10% auto !important;
+  }
+  .introVideoSlide {
+    margin: 10% auto;
+  }
+  .videoContainer {
+    margin: 10% auto !important;
+  }
+}
 
 /* mentor */
+@media (max-width: 760px) {
+  .mq {
+    font-size: 1.5rem !important;
+  }
+  .men {
+    padding: 0%;
+    height: 250px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .men_text {
+    font-size: 1rem !important;
+  }
+
+  .INFO {
+    font-size: 0.75rem !important;
+  }
+}
+
+@media (max-width: 646px) {
+  .temporaryEdit {
+    height: 150px !important;
+    width: 125px !important;
+  }
+  .mentor_card {
+    width: 125px !important;
+    margin: 2% !important;
+  }
+  .men_text {
+    font-size: 0.75rem !important;
+  }
+
+  .INFO {
+    font-size: 0.5rem !important;
+  }
+  .mq {
+    font-size: 1.2rem !important;
+  }
+}
+
 .titleMentor {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
@@ -169,7 +250,7 @@ li.current {
 }
 
 .mentor_card {
-  width: 225px !important;
+  width: 225px;
   margin: 0% 2.66%;
   overflow: hidden;
   position: relative;
@@ -243,27 +324,34 @@ li.current {
   .about-heading1 {
     text-align: center;
     padding: 10% auto 3%;
-    margin-left: 27%;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: #393e46;
-    position: absolute;
-    opacity: 0.2;
+    color: #f8f8f8;
   }
   .about-heading2 {
-    color: #393e46;
-    text-align: center;
-    font-size: 2rem;
+    color: #66fcf1;
+    text-align: center !important;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 45%;
   }
 
   .about-para {
     font-size: 1rem;
     text-align: center;
-    color: #393e46;
+    color: #c5c6c7;
     line-height: 1.5;
+  }
+  .about-heading12 {
+    color: #c5c6c7;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
   }
 
   .about-img {
+    padding-top: 10%;
     width: 60%;
   }
 
@@ -394,12 +482,14 @@ li.current {
 .projectVideo:hover div {
   transform: translateY(100%);
 }
-.projectVideo2 {
-  margin: auto;
-}
+@media (min-width: 768px) {
+  .projectVideo2 {
+    margin: auto;
+  }
 
-.projectVideo3 {
-  margin-left: 10%;
+  .projectVideo3 {
+    margin-left: 10%;
+  }
 }
 .videoContainer {
   margin: 0;
@@ -411,12 +501,28 @@ a:hover {
 .a {
   text-decoration: none;
 }
+@media (max-width: 646px) {
+  .projectVideo {
+    margin: 5px auto;
+    width: 90%;
+  }
+  .projectVideo3Container {
+    margin: auto auto;
+  }
+}
 /* setup */
 #setup {
   height: 100vh;
   background-image: url("photos/setup.jpg");
   background-size: contain;
   background-attachment: fixed;
+}
+@media (max-width: 646px) {
+  #setup {
+    height: 50vh !important;
+    background-attachment: unset !important;
+    background-size: cover !important;
+  }
 }
 /* footer  + contact */
 #contact {
@@ -475,16 +581,18 @@ a:hover {
 .btn-cont {
   padding-left: 0;
 }
-.contactMel {
-  font-size: 0.8rem;
-}
+@media (min-width: 960px) {
+  .contactMel {
+    font-size: 0.8rem;
+  }
 
-.contactMer {
-  float: right;
-  font-size: 0.8rem;
-}
-.leftContactMe {
-  padding: 0 0px 0 50px;
+  .contactMer {
+    float: right;
+    font-size: 0.8rem;
+  }
+  .leftContactMe {
+    padding: 0 0px 0 50px;
+  }
 }
 .submit-button {
   border-color: #00adb5;
@@ -497,8 +605,45 @@ a:hover {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
 }
+
+@media (max-width: 646px) {
+  .footer-links-cont div {
+    margin: 0 1%;
+
+    padding: 1% 1%;
+  }
+  .hidden {
+    height: 0px;
+    width: 0px;
+  }
+  .footer-links-cont {
+    text-align: center !important;
+  }
+
+  .copyright {
+    visibility: hidden;
+  }
+  .section1 {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    text-align: center;
+  }
+  .form-control {
+    font-size: 00.75rem;
+  }
+  .submit-button {
+    font-size: 00.75rem;
+  }
+  .leftContactMe {
+    padding: 5% !important;
+    font-size: 00.8rem;
+  }
+  .leftContactMe span {
+    display: block;
+  }
+}
 footer {
-  background-color: #1f2833;
+  background-color: #0b0c10;
   color: white;
   padding: 1.5% 0;
 }
@@ -533,4 +678,54 @@ footer {
   margin: 2% 0 0 22%;
   font-family: Lato, sans-serif;
   font-weight: bold;
+}
+@media (max-width: 768px) {
+  .clientsImage {
+    width: 40% !important;
+    padding-bottom: 5% !important;
+  }
+  .clientinfohead {
+    font-size: 1.2rem !important;
+    text-align: center;
+  }
+  .clientsInfo {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}
+.clients {
+  background-color: #393e46;
+  text-align: center;
+  color: white;
+  padding: 2% 10% 5%;
+}
+.clientsHeader {
+  color: #66fcf1;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+.clientsTagline {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 700;
+  margin-bottom: 10%;
+  color: #eeeeee;
+}
+
+.clientsInfocol {
+  padding: 0;
+  text-align: left;
+}
+.clientsImagecol {
+  padding: 0;
+}
+
+.clientsImage {
+  width: 60%;
+}
+.clientinfohead {
+  font-weight: 500;
+  color: #45a29e;
+}
+.clientsInfo {
+  color: #eeeeee;
 }
