@@ -151,7 +151,7 @@ li.current {
 }
 @media (max-width: 560px) {
   .header {
-    background-attachment:unset; !important;
+    background-attachment: unset !important;
   }
   .heading {
     font-size: 2rem !important;
